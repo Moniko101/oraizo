@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin:0px;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:1fr 4fr;
+            grid-template-rows:1fr 800px 1fr;
+
+
+        }
+        .header {
+            color:white;
+            background:darkgreen;
+            font-size:60px;
+            text-align:center;
+            grid-column:span 2;
+          }
+        .nav{
+            
+            background-color:burlywood;
+        }
+        .main{
+            color:black;
+            background-color:seagreen;
+            text-align:center;
+            font-size:45px;
+            
+
+
+         }
+         .footer{
+            color:black;
+            background: yellowgreen;
+            text-align:center;
+            font-size:20px;
+            grid-column:span 2;
+         }
+         .nav ul li{
+
+            list-style-type: none;
+            margin-top:5px;
+           font-size:20px;
+            
+         }
+         .nav ul li a{
+            text-decoration:none;
+        }
+       a:hover{
+        font-size:25px;
+        color:blanchedalmond;
+
+       }
+       p{
+        margin:auto;
+        width:500px;
+        font-size:20px;
+        font-style:italic;
+        color:black;
+
+       }
+       .anime{
+       
+        padding:10px;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr  1fr;
+        grid-gap:20px;
+
+       }
+       img
+       {
+        width:300px;
+        height:150px;
+        border-radius:10px;
+       }
+       @media only screen and (max-width:900px) {
+        
+        .container{
+            display:grid;
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr 1fr 800px 1fr;
+            
+
+
+        }
+        .header{
+            grid-column:span 1;
+        }
+        .footer{
+            grid-column:span 1;
+        }
+
+        .nav ul li {
+            
+           
+
+            padding:5px;
+            font-size:20px;
+            
+        }
+        .nav ul{
+           
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    .anime{
+       
+       padding:10px;
+       display:grid;
+       grid-template-columns:1fr 1fr; 
+       grid-template-rows:1fr 1fr ;
+       grid-gap:20px;
+
+      }
+
+       }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">MOONEY'S SITES</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"> HOME PAGE</a></li>
+                <li><a href="aboutme.html"> ABOUT ME</a></li>
+                <li><a href="favanime.html"> FAVORITE ANIME</a></li>
+                <li><a href="hobbies.html"> HOBBIES</a></li>
+
+            </ul>
+
+
+        </div>
+        <div class="main">
+            <h1>MY FAVORITE ANIME</h1>
+            <div class="anime">
+                
+                <img src="clover.jpg" />
+                <img src="fairy.png" />
+                <img src="naruto.png" />
+                <img src="piece.png" />
+                <img src="recca.jpg" />
+                <img src="yuyu.jpg" />
+                
+            </div>
+        </div>
+        <div class="footer">© Copyright 2023 MOONEY'S SITE</div>
+       <div>
+
+</body>
+</html>
